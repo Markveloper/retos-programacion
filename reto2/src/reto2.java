@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Markveloper {
+
+public class reto2 {
     public static void main(String[] args) {
         String[] points = new String[] {"Love", "15", "30", "40", "Ventaja", "Ha ganado"};
         ArrayList<String> P1 = new ArrayList<>();
@@ -15,12 +16,12 @@ public class Markveloper {
             System.out.println("¿Quien ha anotado?");
             String anotador = sc.next();
             if(anotador.equalsIgnoreCase("P1")){
-                    contP1 +=1;
-                    P1.add(points[contP1]);
+                contP1 +=1;
+                P1.add(points[contP1]);
             }
             if(anotador.equalsIgnoreCase("P2")){
-                    contP2 +=1;
-                    P2.add(points[contP2]);
+                contP2 +=1;
+                P2.add(points[contP2]);
             }
             if((P1.get(P1.size() - 1).equalsIgnoreCase(P2.get(P2.size() - 1))) && (contP1 > 2 && contP2 > 2)){
                 System.out.println("Deuce");
